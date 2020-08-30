@@ -62,47 +62,57 @@
     <div class="jumbotron">
       <h1 class="display-4">Aqursi</h1>
       </div>
-            	<div class="contact-me">
+        <div class="contact-me">
 	   	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Send Us A Message
 				</span>
-
+                <form action="https://submit-form.com/xaCMD06yPEtE7eWT-ZqYY" target="_self">
+                    <!-- All elements must have a name attribute -->
+                    <!-- <input type="text" name="subject" placeholder="Subject"> -->
+                    <!-- <textarea name="message" placeholder="Message"></textarea> -->
+                    <!-- <input type="text" name="email" placeholder="Email"> -->
+                    <!-- A button of type submit -->
+                    <!-- <button type="submit">Submit</button> -->
+                <input type="hidden" name="_email.subject" value="You have a new submission from the Aqursi Technologies Website!" />
 				<label class="label-input100" for="first-name">Tell us your name *</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+					<input id="first-name" class="input100" type="text" name="First Name" placeholder="First Name" required>
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" name="last-name" placeholder="Last name">
+				    <input id="last-name" class="input100" type="text" name="Last Name" placeholder="Last Name" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">Enter your email *</label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+				    <input id="Email" class="input100" type="text" name="Email" placeholder="Eg. example@email.com" required>
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="phone">Enter phone number</label>
+				<label class="label-input100" for="phone">Enter phone number *</label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+					<input id="phone" class="input100" type="text" name="Phone Number" placeholder="Eg. +1 800 000000" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="message">Message *</label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+					<textarea id="message" class="input100" name="message" placeholder="Write us a message" rows="4" required></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						Send Message
+                    <ul class="actions">
+						<button class="contact100-form-btn" type="submit">
+						<span>Send Message</span>
 					</button>
+                    </ul>
 				</div>
+                </form>
 			</form>
 
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/chicago.jpeg');">
